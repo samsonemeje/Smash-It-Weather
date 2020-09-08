@@ -1,0 +1,26 @@
+{
+  "name": "Smash It Weather App",
+  "short_name": "Smash It Weather",
+  "start_url": ".",
+  "background_color": "#B9BAA3",
+  "display": "standalone",
+  "theme_color": "#974B2B",
+  "icons": [
+    {
+      "src": "assets/weather-icon144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/weather-icon256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/weather-icon512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

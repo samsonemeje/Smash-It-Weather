@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'montserrat', sans-serif;
+  background-image: url('/assets/bg.jpg');
+  background-size: cover;
+  background-position: top center;
+}
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+
+.logo {
+  background: #75208a;
+  color: #f2f2f2;
+  padding: 25px 15px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* #result {
+  display: hidden;
+} */
+
+header input {
+  width: 100%;
+  height: 60px;
+  max-width: 100%;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: #350c40;
+
+  color: #313131;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.2s ease-out;
+}
+
+::placeholder {
+  color: #979797;
+}
+
+header input:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.saved-searches {
+  background: #884c9f;
+}
+
+.location {
+  display: flex;
+  justify-content: space-between;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 25px 25px;
+  border-bottom: 1px solid rgb(106, 67, 152);
+  border-top: 1px solid rgb(106, 67, 152);
+}
+
+.city {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.date {
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 0;
+  color: rgba(242, 242, 242, 0.6);
+}
+
+.search-heading {
+  text-align: center;
+  margin: 25px 0 9px 0;
+}
+
+.time {
+  font-size: 14px;
+  color: rgba(242, 242, 242, 0.6);
+}
+
+.current {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.current .temp {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  text-shadow: 2px solid red 10px rgba(0, 0, 0, 0.6);
+}
+
+.current .temp span {
+  font-weight: 500;
+}
+
+.current .weather {
+  color: #fff;
+  font-size: 17px;
+  font-style: italic;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* city-info styles */
+.detail-card {
+  /* margin-top: 45px; */
+  color: #fff;
+}
+
+.detail-temp {
+  font-size: 60px;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 2px solid red 10px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.detail-location {
+  text-align: center;
+  font-size: 30px;
+}
+
+.detail-info {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-style: italic;
+}
+
+.detail-date {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: 60px 60px 0 0;
+  padding: 15px;
+}
+
+.actions button,
+.actions a {
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  background: #884c9f;
+  outline: none;
+  border: 2px solid #fff;
+  margin-left: 15px;
+}
