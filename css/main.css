@@ -33,9 +33,15 @@ a {
   text-decoration: none;
 }
 
-/* #result {
-  display: hidden;
-} */
+header {
+  display: flex;
+  align-items: center;
+  background-color: #350c40;
+}
+
+.icon {
+  padding: 10px 15px;
+}
 
 header input {
   width: 100%;
@@ -60,8 +66,68 @@ header input:focus {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
+.detail-card {
+  padding-top: 45px;
+  padding-bottom: 25px;
+  color: #fff;
+  border: 2px solid white;
+}
+
+.detail-temp {
+  font-size: 60px;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 2px solid red 10px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.detail-location {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.detail-info {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 22px;
+  font-style: italic;
+}
+
+.detail-date {
+  text-align: center;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 60px 10px 0;
+  padding: 15px;
+}
+
+.actions button,
+.actions a {
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  background: #884c9f;
+  outline: none;
+  border: 2px solid #fff;
+  margin-left: 15px;
+}
+
+/* saved searches styles */
 .saved-searches {
   background: #884c9f;
+}
+
+.search-heading {
+  text-align: center;
+  margin: 25px 0 9px 0;
 }
 
 .location {
@@ -84,11 +150,6 @@ header input:focus {
   font-size: 14px;
   padding: 5px 0;
   color: rgba(242, 242, 242, 0.6);
-}
-
-.search-heading {
-  text-align: center;
-  margin: 25px 0 9px 0;
 }
 
 .time {
@@ -119,54 +180,4 @@ header input:focus {
   font-size: 17px;
   font-style: italic;
   text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
-}
-
-/* city-info styles */
-.detail-card {
-  /* margin-top: 45px; */
-  color: #fff;
-}
-
-.detail-temp {
-  font-size: 60px;
-  color: #fff;
-  font-weight: 700;
-  text-shadow: 2px solid red 10px rgba(0, 0, 0, 0.6);
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.detail-location {
-  text-align: center;
-  font-size: 30px;
-}
-
-.detail-info {
-  text-align: center;
-  margin-bottom: 15px;
-  font-size: 22px;
-  font-style: italic;
-}
-
-.detail-date {
-  text-align: center;
-  margin-top: 15px;
-}
-
-.actions {
-  display: flex;
-  justify-content: flex-end;
-  margin: 60px 60px 0 0;
-  padding: 15px;
-}
-
-.actions button,
-.actions a {
-  padding: 10px;
-  text-decoration: none;
-  color: #ffffff;
-  background: #884c9f;
-  outline: none;
-  border: 2px solid #fff;
-  margin-left: 15px;
 }

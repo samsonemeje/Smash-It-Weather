@@ -21,17 +21,17 @@ function getResults(query) {
 }
 
 function displayResults(weather) {
-  let city = document.querySelector('#city');
+  let city = document.querySelector('.detail-location');
   city.innerText = `${weather.name}, ${weather.sys.country}`;
 
   let now = new Date();
-  let date = document.querySelector('#date');
+  let date = document.querySelector('.detail-date');
   date.innerText = dateBuilder(now);
 
-  let temp = document.querySelector('#current-temp');
+  let temp = document.querySelector('.detail-temp');
   temp.innerHTML = `${Math.round(weather.main.temp)}<span>°c</span>`;
 
-  let weather_el = document.querySelector('#current-weather');
+  let weather_el = document.querySelector('.detail-info');
   weather_el.innerText = weather.weather[0].main;
 }
 
@@ -67,11 +67,3 @@ function dateBuilder(d) {
 
   return `${day} ${date} ${month} ${year}`;
 }
-
-(function () {
-  let newElement = document.createElement('div');
-  newElement.style.display = 'block';
-
-  let divElement = document.getElementById('detail-card');
-  divElement.appendChild(newElement);
-})();
