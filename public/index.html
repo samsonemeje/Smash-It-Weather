@@ -31,7 +31,7 @@
             </div>
           </main>
 
-          <!-- Saved Search Display -->
+          <!-- Saved Search Display  -->
           <section class="saved-searches">
           <h3 class="search-heading">Saved Searches</h3>
           <a href="city-info.html">
@@ -66,5 +66,29 @@
       </div>
       <script src="js/app.js" async defer></script>
       <script src="js/ui.js" async defer></script>
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+          https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+      <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyBU73D4s_oZb_0WIOJjMol3ukHesLJO7Vc",
+          authDomain: "smash-it-weather-app-dbc5d.firebaseapp.com",
+          databaseURL: "https://smash-it-weather-app-dbc5d.firebaseio.com",
+          projectId: "smash-it-weather-app-dbc5d",
+          storageBucket: "smash-it-weather-app-dbc5d.appspot.com",
+          messagingSenderId: "569478740870",
+          appId: "1:569478740870:web:4f336fd0337f2fbffb4a07",
+          measurementId: "G-WYSMQE5J0V"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
     </body>
 </html>
