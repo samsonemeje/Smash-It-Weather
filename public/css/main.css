@@ -6,7 +6,7 @@
 
 body {
   font-family: 'montserrat', sans-serif;
-  background-image: url('/assets/bg.jpg');
+  background-image: url('../assets/bg.jpg');
   background-size: cover;
   background-position: top center;
 }
@@ -66,76 +66,22 @@ header input:focus {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.detail-card {
-  padding-top: 45px;
-  padding-bottom: 25px;
-  color: #fff;
-}
-
-.detail-temp {
-  font-size: 60px;
-  color: #fff;
-  font-weight: 700;
-  text-shadow: 2px solid red 10px rgba(0, 0, 0, 0.6);
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.detail-location {
-  text-align: center;
-  font-size: 30px;
-  color: #fff;
-}
-
-.detail-info {
-  text-align: center;
-  margin-bottom: 15px;
-  color: #fff;
-  font-size: 22px;
-  font-style: italic;
-}
-
-.detail-date {
-  text-align: center;
-  margin-top: 15px;
-  color: #fff;
-}
-
-.actions {
-  display: flex;
-  justify-content: flex-end;
-  margin: 30px 60px 10px 0;
-  padding: 15px;
-}
-
-.actions button,
-.actions a {
-  padding: 10px;
-  text-decoration: none;
-  color: #ffffff;
-  background: #884c9f;
-  outline: none;
-  border: 2px solid #fff;
-  margin-left: 15px;
-}
-
-/* saved searches styles */
 .saved-searches {
-  background: #884c9f;
-}
-
-.search-heading {
-  text-align: center;
-  margin: 25px 0 9px 0;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
 }
 
 .location {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   padding: 25px 25px;
-  border-bottom: 1px solid rgb(106, 67, 152);
-  border-top: 1px solid rgb(106, 67, 152);
+  min-width: 350px;
+  background: #884c9f;
+  border: 1px solid #350c40;
+  border-radius: 3px;
 }
 
 .city {
@@ -179,4 +125,35 @@ header input:focus {
   font-size: 17px;
   font-style: italic;
   text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Media Query for Mobile */
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .saved-searches {
+    display: block;
+  }
+
+  .location {
+    margin: 10px 0;
+  }
+}
+
+/* Media Query for Tablet */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .saved-searches {
+    background-color: yellow;
+    min-width: 350px;
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .saved-searches a:nth-last-child(1):nth-child(odd) {
+    background-color: violet;
+  }
+
+  .location {
+    margin-bottom: 25px;
+  }
 }
